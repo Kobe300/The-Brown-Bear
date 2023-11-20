@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>GenR-8 Clock Order Submission</title>
+  </head>
+  <body>
+    <section id="overlay">
+      <br>
+      <img src="https://seeklogo.com/images/G/genr8-3d-logo-C4D38C4AD5-seeklogo.com.png" alt="GenR-8 Logo" id="logo">
+      <hr>
+      <form action="submission.html" method="POST">
+        <h1>Create a Clock!</h1>
+        
+        <!--Clock Amount Section--> 
+        <section class="colcks">
+          <label for="amount">How many Clocks would you like to purchase?</label>
+          <input type="number" name="amount" id="amount" max ="5" min = "0">
+        </section>
+        <hr>
+
+        <!--Wood Type Section-->
+        <section class="wood-type">
+          <label for="wood">What wood type would you like?</label>
+          <select name="wood" id="wood">
+            <option value="cedar">Cedar</option>
+            <option value="mahogany">Mahogany</option>
+            <option value="pine">Pine</option>
+          </select>
+        </section>
+        <hr>
+        
+    
+        
+        <!--<section class="cooked">
+          <label for="doneness">How do you want your patty cooked</label>
+          <br>
+          <span>Rare</span>
+          <input type="range" name="doneness" id="doneness" value="3" min="1" max="5">
+          <span>Well-Done</span>
+        </section>
+        <hr>-->
+      
+        <!--Font Type Section-->
+        <section class="font-type">
+          <label for="font">What type of font would you like?</label>
+          <select name="font" id="font">
+            <option value="roman numeral">Roman Numeral</option>
+            <option value="ariel">Ariel</option>
+            <option value="corrier">Corrier</option>
+          </select>
+        </section>
+        <hr>
+
+        <section class="add-acrylic-text">
+          <span>Would you like to add an Insert?</span>
+          <br>
+          <input type="radio" name="acrylic-text" id="yes" value="yes">
+          <label for="yes">Yes</label>
+          <input type="radio" name="acrylic-text" id="no" value="no">
+          <label for="no">No</label>
+        </section>
+        <hr>
+
+        <section class="toppings">
+            <span>What color acrylic toppings would you like to add to your clock?</span>
+            <br>
+            <input type="checkbox" name="topping" id="blue" value="blue">
+            <label for="blue">Blue</label>
+            <input type="checkbox" name="topping" id="red" value="red">
+            <label for="red">Red</label>
+            <input type="checkbox" name="topping" id="yellow" value="yellow">
+            <label for="yellow">Yellow</label>
+        </section>
+        <hr>
+        
+        <section class="add-insert">
+            <span>Would you like to add an Insert?</span>
+            <br>
+            <input type="radio" name="insert" id="yes" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" name="insert" id="no" value="no" >
+            <label for="no">No</label>
+        </section>
+        <hr>
+      
+        <section class="type-insert">
+          <span>What type of data would you like to be place on your insert?</span>
+          <br>
+          <input type="checkbox" name="insertdata" id="picture" value="picture">
+          <label for="picture">Pictures</label>
+          <input type="checkbox" name="insertdata" id="text" value="text">
+          <label for="text">Text</label>
+        </section>
+        <hr>
+        <!--<section class="type-insert">
+          <label for="sauce">What type of data would you like to be place on your insert?</label>
+          <input list="sauces" id="sauce" name="sauce">
+          <datalist id="sauces">
+            <option value="ketchup"></option>
+            <option value="mayo"></option>
+            <option value="mustard"></option>
+          </datalist>
+        </section>
+        <hr> -->
+
+        <section class="extra-info">
+          <label for="extra">Anything else you want to add?</label>
+          <br>
+          <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+        </section>
+        <hr>
+
+        <section class="submission">
+          <input type="submit" value="Submit">
+        </section>
+      </form>
+    </section>
+  </body>
+</html>
